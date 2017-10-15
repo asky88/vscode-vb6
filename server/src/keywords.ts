@@ -1,0 +1,165 @@
+import { CompletionItem, CompletionItemKind } from 'vscode-languageserver';
+
+export let keywords : CompletionItem[] = [
+  { label: 'Access', kind: CompletionItemKind.Keyword, detail: "Access keyword", documentation: "information about access", data: 1 },
+  { label: 'AddressOf', kind: CompletionItemKind.Keyword, data: 2 },
+  { label: 'Alias', kind: CompletionItemKind.Keyword, data: 3 },
+  { label: '&', kind: CompletionItemKind.Keyword, data: 4 }, 
+  { label: 'And', kind: CompletionItemKind.Keyword, data: 5 },
+  { label: 'AppActivate', kind: CompletionItemKind.Keyword, data: 6 },
+  { label: 'AppEnd', kind: CompletionItemKind.Keyword, data: 7 },
+  { label: 'As', kind: CompletionItemKind.Keyword, data: 8 },
+  { label: 'Assign', kind: CompletionItemKind.Keyword, data: 9 }, 
+  { label: 'At', kind: CompletionItemKind.Keyword, data: 10 }, 
+  { label: 'Attribute', kind: CompletionItemKind.Keyword, data: 11 },
+  { label: 'Beep', kind: CompletionItemKind.Keyword, data: 12 },
+  { label: 'Begin', kind: CompletionItemKind.Keyword, data: 13 },
+  { label: 'BeginProperty', kind: CompletionItemKind.Keyword, data: 14 },
+  { label: 'Binary', kind: CompletionItemKind.Unit, data: 15 },
+  { label: 'Boolean', kind: CompletionItemKind.Unit, data: 16 },
+  { label: 'ByRef', kind: CompletionItemKind.Keyword, data: 17 },
+  { label: 'Byte', kind: CompletionItemKind.Keyword, data: 18 },
+  { label: 'ByVal', kind: CompletionItemKind.Keyword, data: 19 },
+  { label: 'Call', kind: CompletionItemKind.Keyword, data: 20 },
+  { label: 'Case', kind: CompletionItemKind.Keyword, data: 21 },
+  { label: 'ChDir', kind: CompletionItemKind.Function, data: 22 },
+  { label: 'ChDrive', kind: CompletionItemKind.Function, data: 23 },
+  { label: 'Class', kind: CompletionItemKind.Keyword, data: 24 },
+  { label: 'Const', kind: CompletionItemKind.Keyword, data: 26 },
+  { label: 'Date', kind: CompletionItemKind.Unit, data: 27 },
+  { label: 'Declare', kind: CompletionItemKind.Keyword, data: 28 },
+  { label: 'DefBool', kind: CompletionItemKind.Keyword, data: 29 },
+  { label: 'DefByte', kind: CompletionItemKind.Keyword, data: 30 },
+  { label: 'DefCur', kind: CompletionItemKind.Keyword, data: 31 },
+  { label: 'DefDate', kind: CompletionItemKind.Keyword, data: 32 },
+  { label: 'DefDbl', kind: CompletionItemKind.Keyword, data: 33 },
+  { label: 'DefDec', kind: CompletionItemKind.Keyword, data: 34 },
+  { label: 'DefInt', kind: CompletionItemKind.Keyword, data: 35 },
+  { label: 'DefLng', kind: CompletionItemKind.Keyword, data: 36 },
+  { label: 'DefObj', kind: CompletionItemKind.Keyword, data: 37 },
+  { label: 'DefSng', kind: CompletionItemKind.Keyword, data: 38 },
+  { label: 'DefStr', kind: CompletionItemKind.Keyword, data: 39 }, 
+  { label: 'DefVar', kind: CompletionItemKind.Keyword, data: 40 }, 
+  { label: 'DeleteSetting', kind: CompletionItemKind.Keyword, data: 41 }, 
+  { label: 'Dim', kind: CompletionItemKind.Keyword, data: 42 }, 
+  { label: 'Do', kind: CompletionItemKind.Keyword, data: 44 }, 
+  { label: '$', kind: CompletionItemKind.Keyword, data: 45 }, 
+  { label: 'Double', kind: CompletionItemKind.Unit, data: 47 },
+  { label: 'Each', kind: CompletionItemKind.Keyword, data: 48 }, 
+  { label: 'Else', kind: CompletionItemKind.Keyword, data: 49 }, 
+  { label: 'ElseIf', kind: CompletionItemKind.Keyword, data: 50 }, 
+  { label: 'End', kind: CompletionItemKind.Keyword, data: 51 }, 
+  { label: 'Enum', kind: CompletionItemKind.Keyword, data: 52 }, 
+  { label: 'Erase', kind: CompletionItemKind.Keyword, data: 55 }, 
+  { label: 'Error', kind: CompletionItemKind.Keyword, data: 56 }, 
+  { label: 'Event', kind: CompletionItemKind.Keyword, data: 57 }, 
+  { label: 'Exit', kind: CompletionItemKind.Keyword, data: 58 }, 
+  { label: 'False', kind: CompletionItemKind.Value, data: 59 }, 
+  { label: 'FileCopy', kind: CompletionItemKind.Keyword, data: 60 }, 
+  { label: 'For', kind: CompletionItemKind.Keyword, data: 63 }, 
+  { label: 'Friend', kind: CompletionItemKind.Keyword, data: 64 }, 
+  { label: 'Function', kind: CompletionItemKind.Keyword, data: 66 }, 
+  { label: 'Get', kind: CompletionItemKind.Keyword, data: 68 }, 
+  { label: 'Global', kind: CompletionItemKind.Keyword, data: 69 }, 
+  { label: 'GoSub', kind: CompletionItemKind.Keyword, data: 70 }, 
+  { label: 'GoTo', kind: CompletionItemKind.Keyword, data: 71 }, 
+  { label: 'If', kind: CompletionItemKind.Keyword, data: 75 }, 
+  { label: 'Implements', kind: CompletionItemKind.Keyword, data: 77 }, 
+  { label: 'In', kind: CompletionItemKind.Keyword, data: 78 }, 
+  { label: 'Integer', kind: CompletionItemKind.Unit, data: 80 },  
+  { label: 'Is', kind: CompletionItemKind.Keyword, data: 81 }, 
+  { label: 'Kill', kind: CompletionItemKind.Function, data: 82 }, 
+  { label: 'Len', kind: CompletionItemKind.Function, data: 84 }, 
+  { label: 'Let', kind: CompletionItemKind.Keyword, data: 86 }, 
+  { label: 'Lib', kind: CompletionItemKind.Keyword, data: 87 }, 
+  { label: 'Like', kind: CompletionItemKind.Keyword, data: 88 },
+  { label: 'Load', kind: CompletionItemKind.Keyword, data: 89 }, 
+  { label: 'Long', kind: CompletionItemKind.Unit, data: 94 }, 
+  { label: 'Loop', kind: CompletionItemKind.Keyword, data: 95 }, 
+  { label: 'Me', kind: CompletionItemKind.Keyword, data: 99 }, 
+  { label: 'Mid', kind: CompletionItemKind.Function, data: 100 }, 
+  { label: 'Mod', kind: CompletionItemKind.Keyword, data: 101 }, 
+  { label: 'New', kind: CompletionItemKind.Keyword, data: 105 }, 
+  { label: 'Next', kind: CompletionItemKind.Keyword, data: 107 }, 
+  { label: 'Not', kind: CompletionItemKind.Keyword, data: 108 }, 
+  { label: 'Nothing', kind: CompletionItemKind.Unit, data: 109 }, 
+  { label: 'Null', kind: CompletionItemKind.Unit, data: 110 }, 
+  { label: 'Object', kind: CompletionItemKind.Unit, data: 111 }, 
+  { label: 'On', kind: CompletionItemKind.Keyword, data: 113 }, 
+  { label: 'Open', kind: CompletionItemKind.Keyword, data: 114 }, 
+  { label: 'Option', kind: CompletionItemKind.Keyword, data: 200 }, 
+  { label: 'Base', kind: CompletionItemKind.Keyword, data: 115 }, 
+  { label: 'Compare', kind: CompletionItemKind.Keyword, data: 116 }, 
+  { label: 'Explicit', kind: CompletionItemKind.Keyword, data: 117 }, 
+  { label: 'Module', kind: CompletionItemKind.Keyword, data: 118 }, 
+  { label: 'Optional', kind: CompletionItemKind.Keyword, data: 119 }, 
+  { label: 'Or', kind: CompletionItemKind.Keyword, data: 120 }, 
+  { label: 'ParamArray', kind: CompletionItemKind.Keyword, data: 122 }, 
+  { label: 'Preserve', kind: CompletionItemKind.Keyword, data: 125 }, 
+  { label: 'Private', kind: CompletionItemKind.Keyword, data: 127 }, 
+  { label: 'Property', kind: CompletionItemKind.Keyword, data: 128 }, 
+  { label: 'Public', kind: CompletionItemKind.Keyword, data: 129 }, 
+  { label: 'Put', kind: CompletionItemKind.Keyword, data: 130 }, 
+  { label: 'RaiseEvent', kind: CompletionItemKind.Keyword, data: 131 }, 
+  { label: 'Rnd', kind: CompletionItemKind.Function, data: 132 }, 
+  { label: 'Randomize', kind: CompletionItemKind.Keyword, data: 133 }, 
+  { label: 'ReadOnly', kind: CompletionItemKind.Keyword, data: 136 }, 
+  { label: 'ReDim', kind: CompletionItemKind.Keyword, data: 137 }, 
+  { label: 'Rem', kind: CompletionItemKind.Keyword, data: 138 }, 
+  { label: 'Reset', kind: CompletionItemKind.Keyword, data: 139 }, 
+  { label: 'Resume', kind: CompletionItemKind.Keyword, data: 140 }, 
+  { label: 'Return', kind: CompletionItemKind.Keyword, data: 141 }, 
+  { label: 'SaveSetting', kind: CompletionItemKind.Function, data: 146 }, 
+  { label: 'Seek', kind: CompletionItemKind.Function, data: 147 }, 
+  { label: 'Select', kind: CompletionItemKind.Keyword, data: 149 }, 
+  { label: 'Set', kind: CompletionItemKind.Keyword, data: 151 }, 
+  { label: 'SetAttr', kind: CompletionItemKind.Keyword, data: 152 }, 
+  { label: 'Shared', kind: CompletionItemKind.Keyword, data: 153 }, 
+  { label: 'Single', kind: CompletionItemKind.Unit, data: 154 }, 
+  { label: 'Static', kind: CompletionItemKind.Keyword, data: 156 }, 
+  { label: 'Step', kind: CompletionItemKind.Keyword, data: 157 }, 
+  { label: 'Stop', kind: CompletionItemKind.Keyword, data: 158 }, 
+  { label: 'String', kind: CompletionItemKind.Unit, data: 159 }, 
+  { label: 'Sub', kind: CompletionItemKind.Keyword, data: 161 }, 
+  { label: 'Then', kind: CompletionItemKind.Keyword, data: 164 }, 
+  { label: 'To', kind: CompletionItemKind.Keyword, data: 166 }, 
+  { label: 'True', kind: CompletionItemKind.Value, data: 167 }, 
+  { label: 'Type', kind: CompletionItemKind.Keyword, data: 168 }, 
+  { label: 'TypeOf', kind: CompletionItemKind.Keyword, data: 169 }, 
+  { label: 'Unload', kind: CompletionItemKind.Keyword, data: 170 }, 
+  { label: 'Until', kind: CompletionItemKind.Keyword, data: 172 }, 
+  { label: 'Variant', kind: CompletionItemKind.Unit, data: 173 }, 
+  { label: 'Wend', kind: CompletionItemKind.Keyword, data: 175 }, 
+  { label: 'While', kind: CompletionItemKind.Keyword, data: 176 }, 
+  { label: 'With', kind: CompletionItemKind.Keyword, data: 178 }, 
+  { label: 'WithEvents', kind: CompletionItemKind.Keyword, data: 179 }, 
+  { label: 'Xor', kind: CompletionItemKind.Keyword, data: 182 }, 
+];
+// keywords visual studio 2008: https://msdn.microsoft.com/en-us/library/ksh7h19t(v=vs.90).aspx
+
+/*Abs  Access  AddItem  AddNew  Alias  And  Any  App  AppActivate  Append  AppendChunk  
+Arrange  As  Asc  Atn  Base  Beep  BeginTrans  Binary  ByVal  Call  Case  CCur  CDbl  
+ChDir  ChDrive  Chr  Chr$  CInt  Circle  Clear  Clipboard  CLng  Close  Cls  Command  
+Command$  CommitTrans  Compare  Const  Control  Controls  Cos  CreateDynaset  CSng  
+CStr  CurDir$  Currency  CVar  CVDate  Data  Date  Date$  DateSerial  DateValue  Day  
+Debug  Declare  DefCur  CefDbl  DefInt  DefLng  DefSng  DefStr  DefVar  Delete  Dim  
+Dir  Dir$  Do  DoEvents  Double  Drag  Dynaset  Edit  Else  ElseIf  End  EndDoc  EndIf  
+Environ$  EOF  Eqv  Erase  Erl  Err  Error  Error$  ExecuteSQL  Exit  Exp  Explicit  
+False  FieldSize  FileAttr  FileCopy  FileDateTime  FileLen  Fix  For  Form  Format  
+Format$  Forms  FreeFile  Function  Get  GetAttr  GetChunk  GetData  DetFormat  GetText  
+Global  GoSub  GoTo  Hex  Hex$  Hide  Hour  If  Imp  Input  Input$  InputBox  InputBox$  
+InStr  Int  Integer  Is  IsDate  IsEmpty  IsNull  IsNumeric  Kill  LBound  LCase  
+LCase$  Left  Left$  Len  Let  Lib  Like  Line  LinkExecute  LinkPoke  LinkRequest  
+LinkSend  Load  LoadPicture  Loc  Local  Lock  LOF  Log  Long  Loop  LSet  LTrim  
+LTrim$  Me  Mid  Mid$  Minute  MkDir  Mod  Month  Move  MoveFirst  MoveLast  MoveNext  
+MovePrevious  MoveRelative  MsgBox  Name  New  NewPage  Next  NextBlock  Not  Nothing  
+Now  Null  Oct  Oct$  On  Open  OpenDataBase  Option  Or  Output  Point  Preserve  
+Print  Printer  PrintForm  Private  PSet  Put  QBColor  Random  Randomize  Read  ReDim  
+Refresh  RegisterDataBase  Rem  RemoveItem  Reset  Restore  Resume  Return  RGB  Right  
+Right$  RmDir  Rnd  Rollback  RSet  RTrim  RTrim$  SavePicture  Scale  Second  Seek  
+Select  SendKeys  Set  SetAttr  SetData  SetFocus  SetText  Sgn  Shared  Shell  Show  
+Sin  Single  Space  Space$  Spc  Sqr  Static  Step  Stop  Str  Str$  StrComp  String  
+String$  Sub  System  Tab  Tan  Text  TextHeight  TextWidth  Then  Time  Time$  Timer  
+TimeSerial  TimeValue  To  Trim  Trim$  True  Type  TypeOf  UBound  UCase  UCase$  
+Unload  Unlock  Until  Update  Using  Val  Variant  VarType  Weekday  Wend  While  
+Width  Write  Xor  Year  ZOrder */

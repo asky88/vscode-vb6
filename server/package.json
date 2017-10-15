@@ -1,0 +1,27 @@
+{
+	"name": "vscode-vb6-server",
+	"author": "Marco Umpiérrez",
+	"description": "VSCode support for Visual Basic 6.",
+	"license": "MIT",
+	"version": "0.0.1",
+	"engines": {
+		"node": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MarcoUmpierrez/vscode-vb6"
+	},
+	"dependencies": {
+		"antlr4ts": "^0.4.1-alpha.0",
+		"vscode-languageserver": "^3.4.2"
+	},
+	"scripts": {
+		"installServer": "installServerIntoExtension ../client ./package.json ./tsconfig.json",
+		"compile": "installServerIntoExtension ../client ./package.json ./tsconfig.json && tsc -p .",
+		"watch": "installServerIntoExtension ../client ./package.json ./tsconfig.json && tsc -w -p .",
+		"antlr4ts": "antlr4ts -visitor src/VisualBasic6/VisualBasic6.g4"
+	},
+	"devDependencies": {
+		"antlr4ts-cli": "^0.4.0-alpha.4"
+	}
+}
