@@ -4,6 +4,7 @@
 	"description": "VSCode support for Visual Basic 6.",
 	"license": "MIT",
 	"version": "0.0.1",
+	"publisher": "MarcoUmpierrez",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/MarcoUmpierrez/vscode-vb6"
